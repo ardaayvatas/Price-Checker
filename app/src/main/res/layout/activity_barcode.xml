@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Barcode"
+    android:orientation="vertical"
+    android:background="@drawable/mybackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:textSize="44sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:text="PRICE CHECKER"
+            ></TextView>
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/loading">
+        </ImageView>
+
+
+        <TextView
+            android:id="@+id/productName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Product is loading..."
+            android:gravity="center"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:id="@+id/lv"
+        ></ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:text="BACK"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="5dp"
+            android:textSize="26sp"
+            android:layout_gravity="bottom"
+            android:theme="@style/Theme.AppCompat.Light"
+            android:onClick="goScan">
+        </Button>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="75dp"
+            android:text="HOME"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="5dp"
+            android:textSize="26sp"
+            android:layout_gravity="bottom"
+            android:theme="@style/Theme.AppCompat.Light"
+            android:onClick="goMain">
+        </Button>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
