@@ -1,8 +1,8 @@
 PriceChecker can identify the item by using its barcode and compare its prices with the ones over the internet.
 
-<img src="https://imgur.com/ctmvYUv"/>
+![](img/Screenshot_1642766585.png)
 
-<img src="https://imgur.com/FiWXYMW"/>
+![](img/Screenshot_1642766689.png)
 
-<img src="https://imgur.com/aDjpze9"/>
+![](img/Screenshot_1642766707.png)
 
